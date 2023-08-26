@@ -16,6 +16,8 @@
     <maven.compiler.source>17</maven.compiler.source>
   </properties>
 
+
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -46,6 +48,22 @@
       <version>1.3</version>
       <scope>test</scope>
     </dependency>
-
   </dependencies>
+
+<build>
+  <plugins>
+    <plugin>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.1.2</version>
+    <configuration>
+      <properties>
+        <includeTag>non-functional</includeTag>
+        <excludeTag>simple</excludeTag>
+      </properties>
+    </configuration>
+    </plugin>
+  </plugins>
+</build>
+
 </project>
+
