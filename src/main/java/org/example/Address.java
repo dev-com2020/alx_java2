@@ -2,13 +2,6 @@ package org.example;
 
 public class Address {
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
     private String firstName;
     private String lastName;
 
@@ -16,7 +9,13 @@ public class Address {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public String getLastName() {
+        return lastName;
+    }
 
 
 }
