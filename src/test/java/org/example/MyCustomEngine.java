@@ -7,7 +7,7 @@ import org.junit.platform.engine.TestEngine;
 import org.junit.platform.engine.UniqueId;
 import org.junit.platform.engine.support.descriptor.EngineDescriptor;
 
-Public class MyCustomEngine implements TestEngine {
+class MyCustomEngine implements TestEngine {
 
     public static final String ENGINE_ID = "my-custom-engine";
 
