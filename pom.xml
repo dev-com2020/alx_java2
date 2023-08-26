@@ -56,9 +56,14 @@
     <artifactId>maven-surefire-plugin</artifactId>
     <version>3.1.2</version>
     <configuration>
+      <includes>
+        <include>**/Test*.java</include>
+        <include>**/*Test.java</include>
+        <include>**/*TestCase.java</include>
+      </includes>
       <properties>
-        <includeTag>non-functional</includeTag>
-        <excludeTag>simple</excludeTag>
+        <includeTags>non-functional</includeTags>
+        <excludeTags>simple</excludeTags>
       </properties>
     </configuration>
     </plugin>

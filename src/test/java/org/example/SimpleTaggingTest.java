@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 //import org.testng.annotations.Test;
 
 
-@Tag("non-functional")
+@Tag("simple")
 class SimpleTaggingTest {
 
     @Test
