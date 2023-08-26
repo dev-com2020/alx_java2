@@ -2,7 +2,8 @@ package org.example;
 
 import org.junit.jupiter.api.*;
 
-public class LifecycleJunit5Test {
+@Disabled(value = "All the test in this class will be skipped")
+class LifecycleJunit5Test {
 
     @BeforeAll
     static void setupAll(){
@@ -23,6 +24,10 @@ public class LifecycleJunit5Test {
     void testTwo(){
         System.out.println("TEST 2");
     }
+
+    @Disabled
+    @Test
+    void disabledTest(){}
 
     @AfterEach
     void tearDown(){
