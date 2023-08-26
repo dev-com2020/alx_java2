@@ -2,8 +2,7 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
-import static org.example.Os.LINUX;
-import static org.example.Os.MAC;
+import static org.example.Os.*;
 
 public class DisabledOnOsTest {
 
