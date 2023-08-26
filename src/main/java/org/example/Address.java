@@ -1,6 +1,5 @@
 package org.example;
 
-
 public class Address {
 
     public String getFirstName() {
@@ -10,7 +9,6 @@ public class Address {
     public String getLastName() {
         return lastName;
     }
-
     private String firstName;
     private String lastName;
 
